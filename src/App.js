@@ -2,7 +2,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import ProjectsComponent from "./components/ProjectsComponent";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, HashRouter, Route, Routes} from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Sustainability from "./components/Sustainability";
 import Contact from "./components/Contact";
