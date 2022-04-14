@@ -12,16 +12,16 @@ import Plus from "./components/Plus";
 
 function App() {
   return (
-    <Router basename={window.location.pathname || ""}>
+    <Router>
       <ScrollToTop>
         <Routes>
-          <Route basename={window.location.pathname || ""} path="/" element={<Home/>}/>
-          <Route basename={window.location.pathname || ""} path="/about" element={<About/>}/>
-          <Route basename={window.location.pathname || ""} path="/projects" element={<Projects/>}/>
-          <Route basename={window.location.pathname || ""} path="/sustainability" element={<Sustainability/>}/>
-          <Route basename={window.location.pathname || ""} path="/contact" element={<Contact/>}/>
-          <Route basename={window.location.pathname || ""} path="/plus" element={<Plus/>}/>
-          <Route basename={window.location.pathname || ""} path="/projects/:simplePath" element={<ProjectsComponent/>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/sustainability" element={<Sustainability/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/plus" element={<Plus/>}/>
+          <Route path="/projects/:simplePath" element={<ProjectsComponent/>}/>
         </Routes>
       </ScrollToTop>
     </Router>
