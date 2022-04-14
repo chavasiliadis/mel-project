@@ -229,6 +229,7 @@ nav ul li:last-child a {
   height: 500px;
 }
 
+
 /* main categories */
 
 /* add some margin between about us the people and the footer */
@@ -3750,7 +3751,7 @@ nav {
   }
   
   .lastPlusImg + footer {
-    margin-top: 150px !important;
+    margin-top: 300px !important;
   }
 }
 
@@ -3806,4 +3807,41 @@ nav {
 
 #react-burger-cross-btn{
   z-index: 9999999 !important
+}
+
+
+
+
+
+@media only screen and (max-width: 380px){
+  .scrollToContinueImprint{
+    top: 115%;
+  }
+}
+
+@media only screen and (max-width:400px){
+  .parallax {
+    background-image: url("../src/images/imagesFINAL/about_effect.jpg");
+    background-size:contain;
+    height: 150px;
+  }
+}
+
+
+@media only screen and (max-width:711px){
+
+
+  .threeQuarterPart{
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+
+  .threeQuarterPart p:first-child{
+    margin-top:0;
+  }
+
+
+  .whiteSpace{
+    display:none;
+  }
 }

@@ -17,9 +17,13 @@ import thei from "../images/imagesFINAL/about/thei.jpg"
 import thomas from "../images/imagesFINAL/about/Thomas.jpg"
 import veronica from "../images/imagesFINAL/about/Veronica.jpg"
 import antonis from "../images/imagesFINAL/about/antonis.jpg";
+import Aos from "aos";
 
 const About = () => {
 
+    useEffect(()=>{
+        Aos.init({duration: 3000});
+    },[])
 
     
     useEffect(()=>{

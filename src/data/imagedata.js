@@ -92,8 +92,8 @@ let data = [
         path: "/projects/AMALamp",
         simplePath: "AMALamp",
         img2:{
-            img2_1:  "https://antoniszaravelas.github.io/mel-project/images/melinas_images/projects/amalamp/lamp 2.jpg",
-            img2_2:  "https://antoniszaravelas.github.io/mel-project/images/melinas_images/projects/countrysideHouse/1.jpg"
+            img2_1: "https://antoniszaravelas.github.io/mel-project/images/melinas_images/projects/countrysideHouse/1.jpg",
+            img2_2:  "https://antoniszaravelas.github.io/mel-project/images/melinas_images/projects/amalamp/lamp 2.jpg"
         },
         img3:"",
         img4:"",

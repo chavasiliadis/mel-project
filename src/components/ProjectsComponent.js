@@ -120,6 +120,12 @@ const EachProject = () => {
         height: "100%"
     }
 
+    const imgstyleCountrySide = {
+        width: "100%", 
+        height: "100%",
+        objectPosition: "right"
+    }
+
     // all image paths
     let allPaths = imagedata.map(project=>project.simplePath);
 
@@ -136,8 +142,7 @@ const EachProject = () => {
     if (nextPath === "/projects/undefined") nextPath= allPaths.indexOf(simplePath)!==allPaths.length-1?"/projects/"+allPaths[allPaths.indexOf(simplePath)+2]:"#";
     if (previousPath === "/projects/undefined") previousPath = allPaths.indexOf(simplePath)!==0?"/projects/"+allPaths[allPaths.indexOf(simplePath)-2]:"#";
 
-    console.log('the previous path is ');
-    console.log(previousPath);
+    console.log(dataToRender.title);
     return ( 
         <>
             {/* MOBILE */}
@@ -153,7 +158,13 @@ const EachProject = () => {
             }
             <div id="containerWhiteSpace">
                 {imgData.imgsrc?
-                    <div className="imgProjectsFix" style={style}><img style={imgstyle} src={imgData.imgsrc} alt="The project" /></div>:
+                    <div className="imgProjectsFix" style={style}>
+                        {dataToRender.title === "Countryside house"?
+                            <img style={imgstyleCountrySide} src={imgData.imgsrc} alt="The project" />:
+                            <img style={imgstyle} src={imgData.imgsrc} alt="The project" />
+                        }
+                    </div>:
+
                    <div className="VIDEOSdiv">
                     <video className="VIDEO" loop autoPlay muted>
                             <source src={imgData.videosrc}  type="video/mp4" />
@@ -180,7 +191,11 @@ const EachProject = () => {
                     : imgData.img2!=="" &&
 
                         <div className="middleImg">
-                            <img src={imgData.img2.img2_1} alt="first" />
+                            {dataToRender.title ==="AMA lamp"?
+                                <img src={imgData.img2.img2_1} className="whiteSpace" alt="la la" />:
+                                <img src={imgData.img2.img2_1} alt="first" />
+                            }
+
                             <img src={imgData.img2.img2_2} alt="second" />
                         </div>   
                     }
@@ -201,7 +216,10 @@ const EachProject = () => {
                     : imgData.img3!=="" &&
 
                         <div className="middleImg">
+                            {dataToRender.title ==="Countryside house"?
+                            <img src={imgData.img3.img3_1} className="whiteSpace" alt="first" />:
                             <img src={imgData.img3.img3_1} alt="first" />
+                            }
                             <img src={imgData.img3.img3_2} alt="second" />
                         </div>   
                     }
