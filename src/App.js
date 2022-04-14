@@ -12,7 +12,7 @@ import Plus from "./components/Plus";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<Home/>}/>
@@ -24,7 +24,7 @@ function App() {
           <Route path="/projects/:simplePath" element={<ProjectsComponent/>}/>
         </Routes>
       </ScrollToTop>
-    </Router>
+    </HashRouter>
   );
 }
 
