@@ -12,7 +12,7 @@ import Plus from "./components/Plus";
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename={window.location.pathname || ""}>
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<Home/>}/>
