@@ -63,7 +63,7 @@ const Contact = () => {
                     <br /> <br /> Do not hesitate to contact us!</p>
 
                     <p><a href="mailto:studio@fzin.it">studio@fzin.it</a>
-                    <br /><br /> +393334911572
+                    <br /><br /> +393334911572.
                     <br /><br /> Via Abbadesse 52
                     <br /> 20124, Milan IT
                     </p>
